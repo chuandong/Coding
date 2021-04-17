@@ -25,7 +25,7 @@ int main()
     
     init_list(&list);
     
-    rlist = list;
+    rlist = list; /*尾插法使用*/
     for (; i < 9; i++)
     {
         tmp = (nodelist *) malloc (sizeof(nodelist));
@@ -34,7 +34,8 @@ int main()
         tmp->next = list->next;
         list->next = tmp;
         */
-        //tmp->next = NULL;
+        //tmp->next = NULL; /*尾插法不能写*/
+        /*尾插法*/
         rlist->next = tmp;
         rlist = tmp;
     }
