@@ -97,6 +97,7 @@ void show_queue(queue_list *Q)
 int main()
 {
     int num = 0;
+    
     queue_list *queue;
     
     init_queue(&queue);
