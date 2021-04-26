@@ -74,6 +74,7 @@ int pop_queue(queue_list *Q, int *data)
     
     if (p == Q->rear)
         Q->rear = Q->front;
+        
     Q->front->next = p->next;
     
     free(p);
