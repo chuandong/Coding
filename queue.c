@@ -114,6 +114,7 @@ int main()
     pop_queue(queue, &num);
     
     printf("val:%d\n", num);
+    
     num = delete_queue(queue, 3);
     
     printf("pos val:%d\n", num);
