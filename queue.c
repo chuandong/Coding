@@ -112,6 +112,7 @@ int main()
     printf("queue length:%d\n", queue->size);
     
     pop_queue(queue, &num);
+    
     printf("val:%d\n", num);
     num = delete_queue(queue, 3);
     
